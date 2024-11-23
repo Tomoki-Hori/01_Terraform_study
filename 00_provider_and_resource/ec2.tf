@@ -7,6 +7,7 @@ resource "aws_instance" "example" {
             echo "Hello World" > index.html
             nohup bydybox httpd -f -p &
             EOF
+    user_data_replace_on_change = true
 
   tags = {
     Name = "terraform-example"
