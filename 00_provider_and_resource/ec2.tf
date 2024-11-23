@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
   user_data                   = <<-EOF
             #! /bin/bash
             echo "Hello World" > index.html
-            nohup bydybox httpd -f -p &
+            nohup busybox httpd -f -p &
             EOF
   user_data_replace_on_change = true
 
