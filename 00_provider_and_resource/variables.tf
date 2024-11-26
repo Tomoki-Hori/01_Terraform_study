@@ -1,5 +1,4 @@
-variable "number_example" {
-    description = "An example of a number variable in Terraform"
+variable "server_port" {
+    description = "The port the server will use for HTTP requests"
     type = number
-    default = 42
 }
