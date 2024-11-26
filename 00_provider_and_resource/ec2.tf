@@ -17,6 +17,6 @@ resource "aws_instance" "example" {
 
 variable "server_port" {
   description = "The port the server will user for HTTP requests"
-  type = number
-  default = 8080
+  type        = number
+  default     = 8080
 }
